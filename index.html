@@ -13,37 +13,34 @@
       <p>Author of <strong>Not On My Bus</strong></p>
     </header>
 
-    <nav>
+    <nav aria-label="Main navigation">
       <ul>
-        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html" aria-current="page">Home</a></li>
         <li><a href="about.html">About Me</a></li>
+        <!--
         <li><a href="reviews.html">Reviews</a></li>
-        <li><a href="shop.html">Shop</a></li>
+        <li><a href="events.html">Events</a></li>
+      -->
+
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
 
     <section class="book-info">
+      <p class="verse">
+        <em
+          >"The <strong>LORD</strong> is good unto them that wait for him, to
+          the soul that seeketh him." <br />-Lamentations 3:25</em
+        >
+      </p>
       <h2>About the Books</h2>
 
-      <div class="book-display">
-        <img src="images/dove-1.jpg" alt="White dove" class="cover-bckgrnd" />
-
-        <img
-          src="images/bookfront.jpg"
-          alt="Not on My Bus book cover"
-          class="book-cover"
-        />
-
-        <img
-          src="images/They Lied_ Hope Has Been Found Cover 2.jpg"
-          alt="They Lied Hope Has Been Found book cover"
-          class="book-cover-2"
-        />
-      </div>
-
-      <div class="book-descriptions">
-        <div class="book-description">
+      <div class="book-grid">
+        <article class="book-item">
+          <div class="book-cover-stage">
+            <img src="images/bookfront.jpg" alt="Not on My Bus book cover" class="book-cover" />
+          </div>
+          <div class="book-description">
           <h3>Not on My Bus</h3>
 
           <p>
@@ -75,12 +72,17 @@
             Buy the Book
           </a>
         </div>
-
-        <div class="book-description">
+        </article>
+        <article class="book-item">
+          <div class="book-cover-stage">
+            <img src="images/They Lied_ Hope Has Been Found Cover 2.jpg" alt="They Lied Hope Has Been Found book cover" class="book-cover-2" />
+          </div>
+          <div class="book-description">
           <h3>They Lied: Hope Has Been Found</h3>
 
           <p class="coming-soon">Coming Soon!</p>
         </div>
+        </article>
       </div>
     </section>
 
